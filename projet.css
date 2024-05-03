@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.logo{
+    width:10%;
+    border-radius:50%;
+    border:solid 1px greenyellow;
+}
+/*fin reset css*/
+/*démarrage du css*/
+.jusAround{
+    display:flex;
+    justify-content:space-around;
+}
+header{
+    background-color:black;
+    padding-bottom : 50px
+}
+nav ul li a{
+    text-decoration: none;
+    color:greenyellow;
+    font-size:25px;
+}
+.bordYellowGreen{
+    border-bottom:solid 5px greenyellow;
+}
+.mt-15{
+    margin-top:15px;
+}
+.ml-20{
+    margin-left:20px;
+}
+.boobook{
+    font-size:500px;
+    color:blue;
+}
+
+.reseau{
+    color: blue;
+    font-size: 30px;
+    display:flex;
+    justify-content: end;
+    float: right;
+    flex-direction: row-reverse;
+    border-bottom:solid 1px greenyellow; width: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+.fcb{
+    color: greenyellow;
+    margin-left: 50px;
+}
+.tiktok{
+    color: greenyellow;
+    margin-left: 50px;
+}
+.x{
+    color: greenyellow;
+}
+
+footer{
+    background-color:black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.width30{
+    width:30%;
+}
+.textCenter{
+    text-align:center;
+}
+.borderRight{
+    border-right:solid 1px greenyellow;
+}
+.colorGreenYellow{
+    color:greenyellow;
+}
+
+h2{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.fcbk, .tktk, .xx{
+    color: greenyellow;
+    font-size: 25px;
+    display:flex;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+p{
+    margin-left: 5px;
+}
+
+.burger{
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+}
+
+
+/*mobile*/
+@media only screen and (max-width: 600px) {
+    header {
+        background-color: red;
+        padding-bottom: 20px;
+    }
+    nav{
+        display:none;
+    }
+    footer{
+        font-size: 1rem;
+    }
+    .fcbk, .tktk, .xx{
+        font-size: 1rem;
+    }
+}
+
+
+/*tablettes*/
+@media only screen and (min-width:601px) and (max-width: 768px) {
+    header {
+        background-color: green;
+        padding-bottom: 20px;
+    }
+    nav{
+        display:none;
+    }
+    footer{
+        font-size: 1.5rem;
+    }
+    .fcbk, .tktk, .xx{
+        font-size: 1.5rem;
+    }
+
+}
+
+/*ordi*/
+@media only screen and (min-width:769px){
+    .burger{
+        display: none;
+    }
+    footer{
+        font-size: 2rem;
+    }
+    .fcbk, .tktk, .xx{
+        font-size: 2rem;
+    }
+    header{
+        font-size: 2rem;
+        background-color: blue;
+    }
+
+
+}
+
+
+
+
+/*fin css*/
+
